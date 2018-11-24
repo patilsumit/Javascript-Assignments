@@ -1,0 +1,29 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :03
+Program       :Write a Javascript Function to generate the unique PIN number of given length n. 
+Date          :29-06-2018
+Auther        :Sumit Patil
+Institute     :WSA
+--------------------------------------------------------------- -->
+<html>
+<!--	<head>
+		<title>Unique Pin Number</title>
+	</head>-->
+	<body>
+<script>
+
+var MyNum=Number(prompt("Enter Length:"));
+debugger;
+var digit = "0123456789";
+	var MyNum_length = MyNum;
+	for (var i=1; i<MyNum_length; i++)
+     {
+		var rnum = Math.floor(Math.random() * digit.length);
+		MyNum += digit.substring(rnum,rnum+1);
+	}
+
+	document.write(MyNum);
+	
+	  </script>
+   </body>
+</html>

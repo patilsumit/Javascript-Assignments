@@ -1,0 +1,33 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :01(c)
+Program       :Write a JavaScript program to find area of triangle where length of the 3 sides are given by
+               the user. 
+Date          :21-06-2018
+Auther        :Sumit Patil
+Institute     :WSA
+----------------------------------------------------------------------  -->
+<html>
+<script>
+
+var s1=Number(prompt("Enter Side-1:"));
+var s2=Number(prompt("Enter Side-2:"));
+var s3=Number(prompt("Enter Side-3:"));
+
+var s=(s1+s2+s3)/2;
+
+document.write(s);
+	
+	//Area Of Tryangle Formula
+	var A=s * (s-s1) * (s-s2) *(s-s3);
+
+
+    //Method For Squar Root
+	var ans=Math.sqrt(Math.abs(A));
+
+	document.write("Final Ans:"+ans);
+
+
+</script>
+<body>
+</body>
+</html>

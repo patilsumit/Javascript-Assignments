@@ -1,0 +1,33 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :01(d)
+Program       :Write a JavaScript Program to find the gross salary of a employee. 
+Date          :21-06-2018
+Auther        :Sumit Patil
+Institute     :WSA
+----------------------------------------------------------------------  -->
+<html>
+<script>
+
+var eid=Number(prompt("Enter Emp Id:"));
+var ename=prompt("Enter Emp Name:");
+var sal=Number(prompt("Enter Emp Sallary:"));
+
+//Find The TA
+var ta=(sal * 15)/100;
+
+//Find The DA
+var da=(sal * 35)/100;
+
+//Calculate The Total Gross Sallary
+var total=sal + ta + da ;
+
+document.write("Emp Id:"+eid+"<br>");
+document.write("Emp Name:"+ename+"<br>");
+document.write("Emp Gross Sallary:"+total); 
+
+
+
+</script>
+<body>
+</body>
+</html>

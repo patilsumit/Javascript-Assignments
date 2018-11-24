@@ -1,0 +1,27 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :04(a)
+Program       :Write a Javascript program To remove specified number of characters from a string. 
+Date          :12-07-2018
+Auther        :Sumit Patil
+Institute     :WSA
+-------------------------------------------------------------------------- -->
+<html>
+<script>
+
+    var myString=prompt("Enter String:");
+    
+    var myPostion=Number(prompt("Enter Remove Postion:"));
+
+    var myChar=Number(prompt("Enter Characters:"));
+    
+
+    var st=myString.substr(myPostion,(myChar + myPostion));
+  
+
+    var rm=myString.replace(st," ");
+    document.write("Final:"+rm);
+    
+
+     
+</script>
+</html>
